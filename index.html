@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinity Export — Trusted Global Exporter from India</title>
+<meta name="description" content="Infinity Export – Premium Indian products exported to 14+ countries. Agriculture, Dairy, Chemicals, Pharmaceuticals, Spices & more. SGS Approved, IEC Certified.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+/* =========================================================
+   INFINITY EXPORT — SINGLE PAGE WEBSITE
+   Design: Refined Luxury · Navy / Gold · Dark Theme
+   ========================================================= */
+
+:root {
+  --navy:       #070e1f;
+  --navy2:      #0d1a36;
+  --navy3:      #122348;
+  --blue:       #1b4fa3;
+  --blue2:      #2563eb;
+  --gold:       #c8922a;
+  --gold2:      #e8b84b;
+  --gold3:      #ffd97d;
+  --white:      #ffffff;
+  --cream:      #f8f5ef;
+  --light:      #eef1f8;
+  --gray:       #9aa3b5;
+  --dark:       #1c2333;
+  --border:     rgba(255,255,255,0.08);
+  --bordl:      rgba(200,146,42,0.25);
+
+  --fh: 'Cormorant Garamond', Georgia, serif;
+  --fb: 'Outfit', system-ui, sans-serif;
+  --ease: cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:var(--fb); background:var(--navy); color:var(--white); line-height:1.65; overflow-x:hidden; }
+a { text-decoration:none; color:inherit; transition:all .3s var(--ease); }
+ul { list-style:none; }
+img { max-width:100%; }
+
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track { background:var(--navy2); }
+::-webkit-scrollbar-thumb { background:var(--gold); border-radius:3px; }
+
+/* ── UTILITY ── */
+.container { max-width:1160px; margin:0 auto; padding:0 24px; }
+.tag {
+  display:inline-block;
+  background:rgba(200,146,42,.12);
+  border:1px solid rgba(200,146,42,.3);
+  color:var(--gold2);
+  font-size:.7rem; font-weight:600; letter-spacing:1px; text-transform:uppercase;
+  padding:5px 14px; border-radius:20px;
+}
+.divider {
+  width:48px; height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--gold3));
+  border-radius:1px;
+  margin:16px 0;
+}
+.sec-title {
+  font-family:var(--fh);
+  font-size:clamp(1.9rem,4vw,2.8rem);
+  font-weight:600;
+  line-height:1.2;
+}
+.sec-title em { font-style:normal; color:var(--gold2); }
+.sec-sub { color:var(--gray); font-size:.93rem; max-width:520px; line-height:1.75; }
+
+section { padding:90px 0; }
+
+/* ── NAVBAR ── */
+#navbar {
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  transition:all .4s var(--ease);
+}
+#navbar.scrolled {
+  background:rgba(7,14,31,.92);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner {
+  display:flex; align-items:center; justify-content:space-between;
+  max-width:1160px; margin:0 auto; padding:0 24px;
+  height:70px;
+}
+.nav-brand {
+  display:flex; align-items:center; gap:12px;
+  font-family:var(--fh); font-size:1.5rem; font-weight:700; color:var(--white);
+}
+.nav-icon {
+  width:38px; height:38px;
+  background:linear-gradient(135deg,var(--gold),var(--gold3));
+  border-radius:8px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:1rem; color:var(--navy); flex-shrink:0;
+}
+.brand-sub { font-family:var(--fb); font-size:.6rem; letter-spacing:.8px; text-transform:uppercase; color:var(--gold2); display:block; margin-top:-2px; }
+.nav-links {
+  display:flex; align-items:center; gap:4px;
+}
+.nav-links a {
+  color:rgba(255,255,255,.75); font-size:.82rem; font-weight:500;
+  padding:7px 14px; border-radius:6px;
+}
+.nav-links a:hover { color:var(--white); background:rgba(255,255,255,.08); }
+.nav-links .nav-btn {
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:var(--navy) !important; font-weight:700;
+  padding:8px 18px;
+}
+.nav-links .nav-btn:hover { opacity:.9; transform:translateY(-1px); }
+.nav-toggle { display:none; background:none; border:1.5px solid rgba(255,255,255,.25); border-radius:6px; padding:7px 10px; color:white; cursor:pointer; font-size:.95rem; }
+.mobile-menu { display:none; }
+.mobile-menu.open {
+  display:flex; flex-direction:column;
+  background:var(--navy2);
+  border-top:1px solid var(--border);
+  padding:12px 24px 20px;
+  gap:4px;
+}
+.mobile-menu a { color:rgba(255,255,255,.8); padding:10px 12px; border-radius:6px; font-size:.9rem; }
+.mobile-menu a:hover { background:rgba(255,255,255,.07); color:var(--white); }
+
+/* ── HERO ── */
+#hero {
+  min-height:100vh;
+  display:flex; align-items:center;
+  position:relative; overflow:hidden;
+  padding-top:70px;
+  background:
+    radial-gradient(ellipse 800px 600px at 70% 40%, rgba(27,79,163,.22) 0%, transparent 70%),
+    radial-gradient(ellipse 400px 400px at 10% 80%, rgba(200,146,42,.08) 0%, transparent 60%),
+    var(--navy);
+}
+/* Animated orb */
+.orb {
+  position:absolute;
+  border-radius:50%;
+  filter:blur(80px);
+  animation:orbFloat 8s ease-in-out infinite;
+  pointer-events:none;
+}
+.orb1 { width:500px; height:500px; background:rgba(27,79,163,.18); right:-100px; top:0; }
+.orb2 { width:300px; height:300px; background:rgba(200,146,42,.07); left:-50px; bottom:80px; animation-delay:-4s; }
+/* Grid pattern */
+#hero::before {
+  content:'';
+  position:absolute; inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size:60px 60px;
+}
+@keyframes orbFloat {
+  0%,100% { transform:translate(0,0) scale(1); }
+  50% { transform:translate(30px,-30px) scale(1.05); }
+}
+
+.hero-grid {
+  display:grid; grid-template-columns:1fr 420px; gap:60px;
+  align-items:center; position:relative; z-index:1;
+}
+.hero-eyebrow {
+  display:inline-flex; align-items:center; gap:8px;
+  background:rgba(200,146,42,.1); border:1px solid rgba(200,146,42,.28);
+  color:var(--gold2); font-size:.7rem; font-weight:600; letter-spacing:1px; text-transform:uppercase;
+  padding:7px 16px; border-radius:20px; margin-bottom:22px;
+}
+.hero-eyebrow i { font-size:.75rem; }
+.hero h1 {
+  font-family:var(--fh); font-size:clamp(2.4rem,5vw,3.8rem);
+  font-weight:700; line-height:1.18; margin-bottom:22px;
+}
+.hero h1 .gold { color:var(--gold2); }
+.hero h1 .outline {
+  -webkit-text-stroke:1.5px var(--gold2);
+  color:transparent;
+}
+.hero-desc { color:var(--gray); font-size:.95rem; line-height:1.8; margin-bottom:34px; max-width:520px; }
+.hero-btns { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:44px; }
+.btn-gold {
+  display:inline-flex; align-items:center; gap:9px;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:var(--navy); font-weight:700; font-size:.88rem;
+  padding:14px 28px; border-radius:8px;
+  box-shadow:0 4px 20px rgba(200,146,42,.35);
+  transition:all .3s var(--ease);
+}
+.btn-gold:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(200,146,42,.45); color:var(--navy); }
+.btn-ghost {
+  display:inline-flex; align-items:center; gap:9px;
+  border:1.5px solid rgba(255,255,255,.25); color:rgba(255,255,255,.85);
+  font-size:.88rem; font-weight:500;
+  padding:13px 24px; border-radius:8px;
+  transition:all .3s var(--ease);
+}
+.btn-ghost:hover { background:rgba(255,255,255,.07); border-color:rgba(255,255,255,.45); color:var(--white); }
+
+.hero-stats {
+  display:flex; gap:36px; padding-top:28px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.h-stat { }
+.h-stat-num { font-family:var(--fh); font-size:2rem; font-weight:700; color:var(--white); display:block; line-height:1; }
+.h-stat-num em { font-style:normal; color:var(--gold2); }
+.h-stat-lbl { font-size:.7rem; color:var(--gray); letter-spacing:.5px; text-transform:uppercase; margin-top:4px; display:block; }
+
+/* Hero card */
+.hero-card {
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:20px;
+  padding:32px 28px;
+  backdrop-filter:blur(16px);
+  position:relative; overflow:hidden;
+}
+.hero-card::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:1px;
+  background:linear-gradient(90deg, transparent, var(--gold2), transparent);
+}
+.hc-title { font-size:.7rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--gold2); margin-bottom:18px; }
+.cert-row {
+  display:flex; align-items:center; gap:12px;
+  padding:11px 14px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:8px;
+  margin-bottom:8px;
+  transition:all .25s;
+}
+.cert-row:hover { background:rgba(200,146,42,.08); border-color:rgba(200,146,42,.2); }
+.cert-icon-sm {
+  width:32px; height:32px;
+  background:linear-gradient(135deg,rgba(200,146,42,.2),rgba(232,184,75,.25));
+  border-radius:7px;
+  display:flex; align-items:center; justify-content:center;
+  color:var(--gold2); font-size:.85rem; flex-shrink:0;
+}
+.cert-name-sm { font-size:.82rem; font-weight:500; color:rgba(255,255,255,.88); }
+.cert-issued { font-size:.68rem; color:var(--gray); margin-top:1px; }
+
+/* ── ABOUT ── */
+#about {
+  background:var(--navy2);
+  position:relative;
+}
+#about::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity:.3;
+}
+.about-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+.about-img-block {
+  background:linear-gradient(145deg,var(--navy3),#192d5a);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:20px;
+  padding:40px 32px;
+  position:relative;
+  overflow:hidden;
+}
+.about-img-block::after {
+  content:'';
+  position:absolute; bottom:-40px; right:-40px;
+  width:200px; height:200px;
+  background:radial-gradient(circle,rgba(200,146,42,.12),transparent 70%);
+  border-radius:50%;
+}
+.company-badge {
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:var(--navy); font-family:var(--fh); font-size:1.1rem; font-weight:700;
+  padding:12px 20px; border-radius:10px;
+  display:inline-flex; align-items:center; gap:8px;
+  margin-bottom:28px;
+}
+.info-row { display:flex; gap:16px; align-items:flex-start; margin-bottom:16px; padding-bottom:16px; border-bottom:1px solid var(--border); }
+.info-row:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
+.info-icon { color:var(--gold2); width:18px; margin-top:3px; flex-shrink:0; font-size:.9rem; }
+.info-label { font-size:.68rem; text-transform:uppercase; letter-spacing:.5px; color:var(--gray); margin-bottom:2px; }
+.info-val { font-size:.88rem; color:rgba(255,255,255,.85); font-weight:500; }
+
+/* ── PRODUCTS ── */
+#products { background:var(--navy); }
+.prod-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+.prod-card {
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:14px; padding:28px 22px;
+  text-align:center;
+  transition:all .3s var(--ease);
+  cursor:default;
+  position:relative; overflow:hidden;
+}
+.prod-card::before {
+  content:'';
+  position:absolute; inset:0;
+  background:linear-gradient(135deg,rgba(200,146,42,.06),rgba(200,146,42,.0));
+  opacity:0; transition:.3s;
+}
+.prod-card:hover { transform:translateY(-6px); border-color:rgba(200,146,42,.3); box-shadow:0 16px 40px rgba(0,0,0,.35); }
+.prod-card:hover::before { opacity:1; }
+.prod-ico {
+  width:60px; height:60px;
+  background:linear-gradient(135deg,rgba(27,79,163,.3),rgba(37,99,235,.2));
+  border-radius:14px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.5rem; color:var(--gold2);
+  margin:0 auto 18px;
+  transition:.3s;
+}
+.prod-card:hover .prod-ico { background:linear-gradient(135deg,rgba(200,146,42,.25),rgba(232,184,75,.15)); }
+.prod-name { font-family:var(--fh); font-size:1.05rem; color:var(--white); margin-bottom:8px; }
+.prod-desc { font-size:.78rem; color:var(--gray); line-height:1.6; }
+
+/* ── COUNTRIES ── */
+#countries { background:var(--navy2); }
+.countries-intro { display:grid; grid-template-columns:1fr 2fr; gap:60px; align-items:start; margin-bottom:56px; }
+.countries-grid {
+  display:grid; grid-template-columns:repeat(5,1fr); gap:14px;
+}
+.country-card {
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:12px; padding:18px 12px;
+  text-align:center;
+  transition:all .3s var(--ease);
+}
+.country-card:hover {
+  background:rgba(200,146,42,.07);
+  border-color:rgba(200,146,42,.3);
+  transform:translateY(-3px);
+}
+.country-flag { font-size:2rem; display:block; margin-bottom:8px; line-height:1; }
+.country-name { font-size:.75rem; font-weight:600; color:rgba(255,255,255,.8); letter-spacing:.2px; }
+.country-region { font-size:.65rem; color:var(--gray); margin-top:2px; }
+
+/* ── CERTIFICATES ── */
+#certificates { background:var(--navy); }
+.cert-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.cert-card {
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:16px; padding:28px 20px;
+  text-align:center;
+  transition:all .3s var(--ease);
+  position:relative; overflow:hidden;
+}
+.cert-card::after {
+  content:'';
+  position:absolute; bottom:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--gold3));
+  transform:scaleX(0); transform-origin:left;
+  transition:.3s;
+}
+.cert-card:hover { border-color:rgba(200,146,42,.3); transform:translateY(-4px); box-shadow:0 12px 32px rgba(0,0,0,.3); }
+.cert-card:hover::after { transform:scaleX(1); }
+.cert-badge {
+  width:58px; height:58px;
+  background:linear-gradient(135deg,rgba(200,146,42,.15),rgba(232,184,75,.1));
+  border:1px solid rgba(200,146,42,.25);
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.3rem; color:var(--gold2);
+  margin:0 auto 16px;
+}
+.cert-title { font-family:var(--fh); font-size:1rem; color:var(--white); margin-bottom:6px; }
+.cert-body { font-size:.75rem; color:var(--gray); line-height:1.6; }
+
+/* ── BROCHURE ── */
+#brochure {
+  background:linear-gradient(120deg,var(--navy2) 0%,var(--navy3) 50%,var(--navy2) 100%);
+  position:relative; overflow:hidden;
+}
+#brochure::before {
+  content:'';
+  position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 600px 400px at 50% 50%,rgba(200,146,42,.06) 0%,transparent 70%);
+}
+.brochure-inner {
+  display:flex; align-items:center; justify-content:space-between; gap:40px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(200,146,42,.2);
+  border-radius:20px; padding:48px 56px;
+  position:relative; z-index:1;
+}
+.brochure-inner::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold2),transparent);
+}
+.brochure-text .tag { margin-bottom:16px; }
+.brochure-text h2 { font-family:var(--fh); font-size:2rem; color:var(--white); margin-bottom:10px; }
+.brochure-text p { color:var(--gray); font-size:.9rem; }
+.btn-download {
+  display:inline-flex; align-items:center; gap:12px;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:var(--navy); font-weight:700; font-size:.95rem;
+  padding:18px 36px; border-radius:10px;
+  box-shadow:0 6px 28px rgba(200,146,42,.4);
+  transition:all .3s var(--ease); white-space:nowrap; flex-shrink:0;
+}
+.btn-download:hover { transform:translateY(-3px) scale(1.02); box-shadow:0 10px 36px rgba(200,146,42,.55); color:var(--navy); }
+.btn-download i { font-size:1.1rem; }
+.dl-note { font-size:.72rem; color:var(--gray); margin-top:8px; text-align:center; }
+
+/* ── CONTACT ── */
+#contact { background:var(--navy2); }
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:52px; }
+.contact-option {
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:20px; padding:44px 40px;
+  text-align:center;
+  transition:all .35s var(--ease);
+  position:relative; overflow:hidden;
+}
+.contact-option::before {
+  content:'';
+  position:absolute; inset:0;
+  opacity:0; transition:.35s;
+}
+.opt-wa::before { background:radial-gradient(circle at 50% 0%,rgba(37,211,102,.08),transparent 60%); }
+.opt-mail::before { background:radial-gradient(circle at 50% 0%,rgba(27,79,163,.1),transparent 60%); }
+.contact-option:hover { transform:translateY(-6px); }
+.opt-wa:hover { border-color:rgba(37,211,102,.3); box-shadow:0 16px 48px rgba(37,211,102,.1); }
+.opt-mail:hover { border-color:rgba(37,99,235,.35); box-shadow:0 16px 48px rgba(37,99,235,.1); }
+.contact-option:hover::before { opacity:1; }
+
+.opt-icon {
+  width:80px; height:80px; border-radius:20px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:2rem; margin:0 auto 24px;
+}
+.opt-wa .opt-icon { background:rgba(37,211,102,.12); color:#25d366; border:1px solid rgba(37,211,102,.2); }
+.opt-mail .opt-icon { background:rgba(37,99,235,.12); color:var(--blue2); border:1px solid rgba(37,99,235,.2); }
+.opt-title { font-family:var(--fh); font-size:1.5rem; color:var(--white); margin-bottom:8px; }
+.opt-sub { color:var(--gray); font-size:.85rem; margin-bottom:28px; line-height:1.7; }
+.opt-contact { font-size:1rem; font-weight:600; margin-bottom:24px; }
+.opt-wa .opt-contact { color:#4ade80; }
+.opt-mail .opt-contact { color:#93c5fd; }
+
+.btn-wa {
+  display:inline-flex; align-items:center; gap:10px;
+  background:linear-gradient(135deg,#25d366,#128c7e);
+  color:white !important; font-weight:700; font-size:.9rem;
+  padding:15px 32px; border-radius:10px;
+  box-shadow:0 4px 20px rgba(37,211,102,.3);
+  transition:all .3s var(--ease);
+}
+.btn-wa:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(37,211,102,.45); }
+.btn-mail {
+  display:inline-flex; align-items:center; gap:10px;
+  background:linear-gradient(135deg,var(--blue),var(--blue2));
+  color:white !important; font-weight:700; font-size:.9rem;
+  padding:15px 32px; border-radius:10px;
+  box-shadow:0 4px 20px rgba(37,99,235,.3);
+  transition:all .3s var(--ease);
+}
+.btn-mail:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(37,99,235,.45); }
+
+.contact-details {
+  margin-top:52px;
+  background:rgba(255,255,255,.02);
+  border:1px solid var(--border);
+  border-radius:14px; padding:28px 36px;
+  display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap; gap:24px;
+}
+.cd-item { display:flex; align-items:center; gap:14px; }
+.cd-ico { color:var(--gold2); font-size:1.1rem; }
+.cd-label { font-size:.68rem; text-transform:uppercase; letter-spacing:.5px; color:var(--gray); margin-bottom:3px; }
+.cd-val { font-size:.88rem; color:rgba(255,255,255,.85); font-weight:500; }
+.cd-val a { color:var(--gold2); }
+
+/* ── FOOTER ── */
+footer {
+  background:var(--navy);
+  border-top:1px solid var(--border);
+  padding:32px 0;
+}
+.footer-inner {
+  display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;
+}
+.footer-brand { font-family:var(--fh); font-size:1.2rem; color:var(--white); display:flex; align-items:center; gap:10px; }
+.footer-brand i { color:var(--gold2); }
+.footer-copy { font-size:.75rem; color:var(--gray); }
+.footer-links { display:flex; gap:20px; }
+.footer-links a { font-size:.78rem; color:var(--gray); }
+.footer-links a:hover { color:var(--gold2); }
+
+/* ── FLOATING WA BUTTON ── */
+.wa-float {
+  position:fixed; bottom:28px; right:28px;
+  width:56px; height:56px; border-radius:50%;
+  background:linear-gradient(135deg,#25d366,#128c7e);
+  color:white; font-size:1.5rem;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,.45);
+  z-index:999; transition:all .3s var(--ease);
+}
+.wa-float:hover { transform:scale(1.12); box-shadow:0 8px 30px rgba(37,211,102,.6); color:white; }
+
+/* ── SCROLL REVEAL ── */
+.reveal { opacity:0; transform:translateY(32px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal.visible { opacity:1; transform:translateY(0); }
+.reveal.delay-1 { transition-delay:.1s; }
+.reveal.delay-2 { transition-delay:.2s; }
+.reveal.delay-3 { transition-delay:.3s; }
+.reveal.delay-4 { transition-delay:.4s; }
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero-grid { grid-template-columns:1fr; max-width:680px; }
+  .hero-card { display:none; }
+  .about-grid { grid-template-columns:1fr; }
+  .prod-grid { grid-template-columns:repeat(3,1fr); }
+  .cert-grid { grid-template-columns:repeat(2,1fr); }
+  .countries-intro { grid-template-columns:1fr; gap:24px; }
+  .countries-grid { grid-template-columns:repeat(4,1fr); }
+}
+@media(max-width:768px){
+  .nav-links { display:none; }
+  .nav-toggle { display:block; }
+  section { padding:64px 0; }
+  .prod-grid { grid-template-columns:repeat(2,1fr); }
+  .countries-grid { grid-template-columns:repeat(3,1fr); }
+  .contact-grid { grid-template-columns:1fr; }
+  .brochure-inner { flex-direction:column; text-align:center; padding:36px 28px; }
+  .hero-stats { gap:24px; flex-wrap:wrap; }
+  .contact-details { flex-direction:column; align-items:flex-start; padding:24px; }
+}
+@media(max-width:480px){
+  .prod-grid { grid-template-columns:1fr 1fr; }
+  .countries-grid { grid-template-columns:repeat(2,1fr); }
+  .cert-grid { grid-template-columns:1fr 1fr; }
+  .hero h1 { font-size:2.2rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-brand">
+      <div class="nav-icon"><i class="fas fa-globe-asia"></i></div>
+      <div>
+        <span>Infinity Export</span>
+        <span class="brand-sub">Trusted Global Exporter · India</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#countries">Markets</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#brochure">Brochure</a>
+      <a href="#contact" class="nav-btn">Contact Us</a>
+    </div>
+    <button class="nav-toggle" onclick="toggleMobile()" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#products" onclick="closeMobile()">Products</a>
+    <a href="#countries" onclick="closeMobile()">Markets</a>
+    <a href="#certificates" onclick="closeMobile()">Certificates</a>
+    <a href="#brochure" onclick="closeMobile()">Brochure</a>
+    <a href="#contact" onclick="closeMobile()" style="color:var(--gold2);font-weight:600;">Contact Us</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section id="hero">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow reveal">
+          <i class="fas fa-map-marker-alt"></i>
+          Surat, Gujarat, India &nbsp;·&nbsp; Est. 2022
+        </div>
+        <h1 class="reveal delay-1">
+          Your Trusted<br>
+          <span class="gold">Global Export</span><br>
+          <span class="outline">Partner</span>
+        </h1>
+        <p class="hero-desc reveal delay-2">
+          Premium Indian products delivered to 14+ countries across 5 continents. Agriculture, Dairy, Chemicals, Pharmaceuticals, Spices & more — with SGS-approved quality every shipment.
+        </p>
+        <div class="hero-btns reveal delay-3">
+          <a href="#contact" class="btn-gold"><i class="fas fa-paper-plane"></i> Get a Free Quote</a>
+          <a href="#products" class="btn-ghost"><i class="fas fa-boxes"></i> Our Products</a>
+        </div>
+        <div class="hero-stats reveal delay-4">
+          <div class="h-stat">
+            <span class="h-stat-num">14<em>+</em></span>
+            <span class="h-stat-lbl">Countries</span>
+          </div>
+          <div class="h-stat">
+            <span class="h-stat-num">7<em>+</em></span>
+            <span class="h-stat-lbl">Product Lines</span>
+          </div>
+          <div class="h-stat">
+            <span class="h-stat-num">8<em>+</em></span>
+            <span class="h-stat-lbl">Certifications</span>
+          </div>
+          <div class="h-stat">
+            <span class="h-stat-num">5<em>+</em></span>
+            <span class="h-stat-lbl">Yrs Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificates Card (desktop) -->
+      <div class="hero-card reveal delay-2">
+        <div class="hc-title"><i class="fas fa-shield-alt" style="margin-right:6px;"></i>Our Certifications</div>
+        <div class="cert-row">
+          <div class="cert-icon-sm"><i class="fas fa-file-invoice"></i></div>
+          <div><div class="cert-name-sm">IEC Certificate</div><div class="cert-issued">Import Export Code · DGFT</div></div>
+        </div>
+        <div class="cert-row">
+          <div class="cert-icon-sm"><i class="fas fa-receipt"></i></div>
+          <div><div class="cert-name-sm">GST Certificate</div><div class="cert-issued">Goods & Services Tax · India</div></div>
+        </div>
+        <div class="cert-row">
+          <div class="cert-icon-sm"><i class="fas fa-leaf"></i></div>
+          <div><div class="cert-name-sm">APEDA Certificate</div><div class="cert-issued">Agricultural & Processed Food</div></div>
+        </div>
+        <div class="cert-row">
+          <div class="cert-icon-sm"><i class="fas fa-flask"></i></div>
+          <div><div class="cert-name-sm">Chemixo Certificate</div><div class="cert-issued">Chemical Products Compliance</div></div>
+        </div>
+        <div class="cert-row">
+          <div class="cert-icon-sm"><i class="fas fa-building"></i></div>
+          <div><div class="cert-name-sm">Udhyam Certificate</div><div class="cert-issued">MSME Registration · India</div></div>
+        </div>
+        <div class="cert-row">
+          <div class="cert-icon-sm"><i class="fas fa-mortar-pestle"></i></div>
+          <div><div class="cert-name-sm">Spice Board</div><div class="cert-issued">Registered Spice Exporter</div></div>
+        </div>
+        <div class="cert-row">
+          <div class="cert-icon-sm"><i class="fas fa-scroll"></i></div>
+          <div><div class="cert-name-sm">Certificate of Origin</div><div class="cert-issued">Trade Documentation</div></div>
+        </div>
+        <div class="cert-row">
+          <div class="cert-icon-sm"><i class="fas fa-seedling"></i></div>
+          <div><div class="cert-name-sm">Phytosanitary Certificate</div><div class="cert-issued">Plant Health Compliance</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-block reveal">
+        <div class="company-badge"><i class="fas fa-globe"></i> Infinity Export</div>
+        <div class="info-row">
+          <i class="fas fa-map-marker-alt info-icon"></i>
+          <div>
+            <div class="info-label">Headquarters</div>
+            <div class="info-val">A-17 Nilkanth Society, Katargam,<br>Surat, Gujarat 395004, India</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <i class="fas fa-calendar info-icon"></i>
+          <div>
+            <div class="info-label">Established</div>
+            <div class="info-val">2022 · 5+ Years of Export Excellence</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <i class="fas fa-globe-asia info-icon"></i>
+          <div>
+            <div class="info-label">Global Reach</div>
+            <div class="info-val">14+ Countries Across 5 Continents</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <i class="fas fa-phone info-icon"></i>
+          <div>
+            <div class="info-label">Contact</div>
+            <div class="info-val">+91 84697 97592</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <i class="fas fa-envelope info-icon"></i>
+          <div>
+            <div class="info-label">Email</div>
+            <div class="info-val">infinityexport123@gmail.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal delay-2">
+        <span class="tag">About Us</span>
+        <div class="divider"></div>
+        <h2 class="sec-title" style="margin-bottom:20px;">Building Global<br>Trade Bridges <em>from India</em></h2>
+        <p class="sec-sub" style="margin-bottom:20px;">Infinity Export is a professionally managed Indian export company based in Surat — India's trade and diamond capital. Founded in 2022, we have rapidly grown into a trusted global partner, connecting premium Indian suppliers with buyers across 14 countries worldwide.</p>
+        <p class="sec-sub" style="margin-bottom:32px;">We specialise in 7 product categories, handle all export documentation in-house, and maintain strict quality standards backed by 8 international certifications. Our commitment: reliable products, on-time delivery, and transparent trade.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+          <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px;padding:16px;display:flex;align-items:center;gap:12px;">
+            <i class="fas fa-shield-alt" style="color:var(--gold2);"></i>
+            <span style="font-size:.82rem;color:rgba(255,255,255,.8);font-weight:500;">SGS Quality Approved</span>
+          </div>
+          <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px;padding:16px;display:flex;align-items:center;gap:12px;">
+            <i class="fas fa-truck" style="color:var(--gold2);"></i>
+            <span style="font-size:.82rem;color:rgba(255,255,255,.8);font-weight:500;">98% On-Time Delivery</span>
+          </div>
+          <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px;padding:16px;display:flex;align-items:center;gap:12px;">
+            <i class="fas fa-file-contract" style="color:var(--gold2);"></i>
+            <span style="font-size:.82rem;color:rgba(255,255,255,.8);font-weight:500;">Full Documentation</span>
+          </div>
+          <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px;padding:16px;display:flex;align-items:center;gap:12px;">
+            <i class="fas fa-handshake" style="color:var(--gold2);"></i>
+            <span style="font-size:.82rem;color:rgba(255,255,255,.8);font-weight:500;">Flexible Trade Terms</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ PRODUCTS ═══════════════════ -->
+<section id="products">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:52px;">
+      <span class="tag reveal">What We Export</span>
+      <div class="divider" style="margin:16px auto;"></div>
+      <h2 class="sec-title reveal delay-1">Our <em>Product Categories</em></h2>
+      <p class="sec-sub reveal delay-2" style="margin:16px auto 0;">Seven diverse categories — from farm to pharma — all exported with verified quality documentation.</p>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card reveal">
+        <div class="prod-ico"><i class="fas fa-seedling"></i></div>
+        <div class="prod-name">Agriculture Products</div>
+        <p class="prod-desc">Grains, pulses, oilseeds & commodities from certified Indian farms with full traceability.</p>
+      </div>
+      <div class="prod-card reveal delay-1">
+        <div class="prod-ico"><i class="fas fa-cheese"></i></div>
+        <div class="prod-name">Dairy Products</div>
+        <p class="prod-desc">Pure ghee, butter, milk powder & dairy essentials from FSSAI-certified facilities.</p>
+      </div>
+      <div class="prod-card reveal delay-2">
+        <div class="prod-ico"><i class="fas fa-flask"></i></div>
+        <div class="prod-name">Chemicals</div>
+        <p class="prod-desc">Industrial solvents, polymers & specialty chemicals with complete MSDS documentation.</p>
+      </div>
+      <div class="prod-card reveal delay-3">
+        <div class="prod-ico"><i class="fas fa-pills"></i></div>
+        <div class="prod-name">Pharmaceuticals</div>
+        <p class="prod-desc">Generic medicines, APIs & nutraceuticals from GMP-certified Indian manufacturers.</p>
+      </div>
+      <div class="prod-card reveal">
+        <div class="prod-ico"><i class="fas fa-paw"></i></div>
+        <div class="prod-name">Animal Feed</div>
+        <p class="prod-desc">Quality feed materials for livestock & aquaculture industries worldwide.</p>
+      </div>
+      <div class="prod-card reveal delay-1">
+        <div class="prod-ico"><i class="fas fa-mortar-pestle"></i></div>
+        <div class="prod-name">Spices & Beverages</div>
+        <p class="prod-desc">Turmeric, cumin, cardamom, chilli & premium herbal teas. Spice Board registered.</p>
+      </div>
+      <div class="prod-card reveal delay-2">
+        <div class="prod-ico"><i class="fas fa-apple-alt"></i></div>
+        <div class="prod-name">Fruits & Vegetables</div>
+        <p class="prod-desc">Alphonso mangoes, pomegranates, onions & frozen veg with cold-chain logistics.</p>
+      </div>
+      <div class="prod-card reveal delay-3" style="background:linear-gradient(135deg,rgba(200,146,42,.08),rgba(200,146,42,.03));border-color:rgba(200,146,42,.2);">
+        <div class="prod-ico" style="background:linear-gradient(135deg,rgba(200,146,42,.2),rgba(232,184,75,.15));"><i class="fas fa-plus"></i></div>
+        <div class="prod-name" style="color:var(--gold2);">Custom Sourcing</div>
+        <p class="prod-desc">Don't see what you need? We source custom products on request. Contact us.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ COUNTRIES ═══════════════════ -->
+<section id="countries">
+  <div class="container">
+    <div class="countries-intro">
+      <div class="reveal">
+        <span class="tag">Where We Operate</span>
+        <div class="divider"></div>
+        <h2 class="sec-title">Countries <em>We've Served</em></h2>
+        <p class="sec-sub" style="margin-top:14px;">Delivering quality Indian products across the Middle East, South Asia, Europe, Africa, North America, Oceania, and East Asia.</p>
+        <div style="margin-top:28px;display:flex;gap:28px;flex-wrap:wrap;">
+          <div style="text-align:center;">
+            <div style="font-family:var(--fh);font-size:2rem;font-weight:700;color:var(--white);">14<span style="color:var(--gold2);">+</span></div>
+            <div style="font-size:.7rem;color:var(--gray);text-transform:uppercase;letter-spacing:.5px;margin-top:2px;">Countries</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-family:var(--fh);font-size:2rem;font-weight:700;color:var(--white);">5<span style="color:var(--gold2);"> Continents</span></div>
+            <div style="font-size:.7rem;color:var(--gray);text-transform:uppercase;letter-spacing:.5px;margin-top:2px;">Global Reach</div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="countries-grid">
+      <div class="country-card reveal">
+        <span class="country-flag">🇦🇪</span>
+        <div class="country-name">UAE</div>
+        <div class="country-region">Middle East</div>
+      </div>
+      <div class="country-card reveal delay-1">
+        <span class="country-flag">🏙️</span>
+        <div class="country-name">Dubai</div>
+        <div class="country-region">UAE / Middle East</div>
+      </div>
+      <div class="country-card reveal delay-2">
+        <span class="country-flag">🇴🇲</span>
+        <div class="country-name">Oman</div>
+        <div class="country-region">Middle East</div>
+      </div>
+      <div class="country-card reveal delay-3">
+        <span class="country-flag">🇸🇦</span>
+        <div class="country-name">Saudi Arabia</div>
+        <div class="country-region">Middle East</div>
+      </div>
+      <div class="country-card reveal delay-4">
+        <span class="country-flag">🇳🇵</span>
+        <div class="country-name">Nepal</div>
+        <div class="country-region">South Asia</div>
+      </div>
+      <div class="country-card reveal">
+        <span class="country-flag">🇧🇹</span>
+        <div class="country-name">Bhutan</div>
+        <div class="country-region">South Asia</div>
+      </div>
+      <div class="country-card reveal delay-1">
+        <span class="country-flag">🇿🇦</span>
+        <div class="country-name">South Africa</div>
+        <div class="country-region">Africa</div>
+      </div>
+      <div class="country-card reveal delay-2">
+        <span class="country-flag">🇺🇸</span>
+        <div class="country-name">USA</div>
+        <div class="country-region">North America</div>
+      </div>
+      <div class="country-card reveal delay-3">
+        <span class="country-flag">🇬🇧</span>
+        <div class="country-name">UK</div>
+        <div class="country-region">Europe</div>
+      </div>
+      <div class="country-card reveal delay-4">
+        <span class="country-flag">🇦🇺</span>
+        <div class="country-name">Australia</div>
+        <div class="country-region">Oceania</div>
+      </div>
+      <div class="country-card reveal">
+        <span class="country-flag">🇷🇺</span>
+        <div class="country-name">Russia</div>
+        <div class="country-region">Europe / Asia</div>
+      </div>
+      <div class="country-card reveal delay-1">
+        <span class="country-flag">🇩🇪</span>
+        <div class="country-name">Germany</div>
+        <div class="country-region">Europe</div>
+      </div>
+      <div class="country-card reveal delay-2">
+        <span class="country-flag">🇸🇬</span>
+        <div class="country-name">Singapore</div>
+        <div class="country-region">Southeast Asia</div>
+      </div>
+      <div class="country-card reveal delay-3">
+        <span class="country-flag">🇨🇦</span>
+        <div class="country-name">Canada</div>
+        <div class="country-region">North America</div>
+      </div>
+      <div class="country-card reveal delay-4" style="background:rgba(200,146,42,.06);border-color:rgba(200,146,42,.2);">
+        <span class="country-flag" style="font-size:1.6rem;">🌍</span>
+        <div class="country-name" style="color:var(--gold2);">& More…</div>
+        <div class="country-region">Expanding Globally</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CERTIFICATES ═══════════════════ -->
+<section id="certificates">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:52px;">
+      <span class="tag reveal">Trust & Compliance</span>
+      <div class="divider" style="margin:16px auto;"></div>
+      <h2 class="sec-title reveal delay-1">Our <em>Certifications</em></h2>
+      <p class="sec-sub reveal delay-2" style="margin:16px auto 0;">Fully certified and compliant with Indian and international trade regulations — every shipment backed by verified documentation.</p>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-badge"><i class="fas fa-file-invoice"></i></div>
+        <div class="cert-title">IEC Certificate</div>
+        <p class="cert-body">Import Export Code issued by DGFT, Government of India. Mandatory for all international trade operations.</p>
+      </div>
+      <div class="cert-card reveal delay-1">
+        <div class="cert-badge"><i class="fas fa-receipt"></i></div>
+        <div class="cert-title">GST Certificate</div>
+        <p class="cert-body">Goods & Services Tax registration — proof of a legitimate, tax-compliant Indian business entity.</p>
+      </div>
+      <div class="cert-card reveal delay-2">
+        <div class="cert-badge"><i class="fas fa-leaf"></i></div>
+        <div class="cert-title">APEDA Certificate</div>
+        <p class="cert-body">Agricultural & Processed Food Products Export Development Authority — authorises export of agri products.</p>
+      </div>
+      <div class="cert-card reveal delay-3">
+        <div class="cert-badge"><i class="fas fa-flask"></i></div>
+        <div class="cert-title">Chemixo Certificate</div>
+        <p class="cert-body">Chemical product compliance certification ensuring our chemical exports meet international safety standards.</p>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-badge"><i class="fas fa-building"></i></div>
+        <div class="cert-title">Udhyam Certificate</div>
+        <p class="cert-body">MSME Udyam Registration confirming we are a verified Micro, Small & Medium Enterprise under GOI norms.</p>
+      </div>
+      <div class="cert-card reveal delay-1">
+        <div class="cert-badge"><i class="fas fa-mortar-pestle"></i></div>
+        <div class="cert-title">Spice Board</div>
+        <p class="cert-body">Registered with the Spices Board of India — authorising export of all categories of spices and spice products.</p>
+      </div>
+      <div class="cert-card reveal delay-2">
+        <div class="cert-badge"><i class="fas fa-scroll"></i></div>
+        <div class="cert-title">Certificate of Origin</div>
+        <p class="cert-body">Officially certifies that exported goods are wholly obtained, produced, or processed in India — required for customs clearance.</p>
+      </div>
+      <div class="cert-card reveal delay-3">
+        <div class="cert-badge"><i class="fas fa-seedling"></i></div>
+        <div class="cert-title">Phytosanitary Certificate</div>
+        <p class="cert-body">Issued by Plant Quarantine authorities, confirming plant-based products are free from pests and diseases for import.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ BROCHURE ═══════════════════ -->
+<section id="brochure" style="padding:70px 0;">
+  <div class="container">
+    <div class="brochure-inner reveal">
+      <div class="brochure-text">
+        <span class="tag">Company Brochure</span>
+        <h2>Download Our<br>Product Catalogue</h2>
+        <p>Everything about Infinity Export — our products, certifications, trade terms, and contact details in one professional document.</p>
+      </div>
+      <div style="text-align:center;">
+        <!-- 
+          TO ENABLE BROCHURE DOWNLOAD:
+          1. Place your PDF file (e.g. "infinity-export-brochure.pdf") in the same folder as this HTML
+          2. Change href="#" below to href="infinity-export-brochure.pdf"
+          3. The 'download' attribute will trigger the browser to download the file automatically
+        -->
+        <a href="#" download="Infinity-Export-Brochure.pdf" class="btn-download" onclick="brochureClick(event)">
+          <i class="fas fa-file-pdf"></i> Download Brochure
+        </a>
+        <div class="dl-note"><i class="fas fa-info-circle" style="color:var(--gold);margin-right:4px;"></i>PDF format · Add your brochure file to activate download</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="tag reveal">Get in Touch</span>
+      <div class="divider" style="margin:16px auto;"></div>
+      <h2 class="sec-title reveal delay-1">Contact <em>Us Now</em></h2>
+      <p class="sec-sub reveal delay-2" style="margin:16px auto 0;">Ready to place an order or need a quote? Reach us instantly — we respond within 24 hours.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- WhatsApp -->
+      <div class="contact-option opt-wa reveal">
+        <div class="opt-icon"><i class="fab fa-whatsapp"></i></div>
+        <h3 class="opt-title">Chat on WhatsApp</h3>
+        <p class="opt-sub">The fastest way to reach us. Share your product requirements, quantity, and destination — we'll respond with a quote immediately.</p>
+        <div class="opt-contact"><i class="fab fa-whatsapp" style="margin-right:6px;"></i>+91 84697 97592</div>
+        <a href="https://wa.me/918469797592?text=Hello%20Infinity%20Export%2C%20I%20am%20interested%20in%20your%20products.%20Please%20share%20more%20details." target="_blank" class="btn-wa">
+          <i class="fab fa-whatsapp"></i> Open WhatsApp Chat
+        </a>
+      </div>
+
+      <!-- Email -->
+      <div class="contact-option opt-mail reveal delay-2">
+        <div class="opt-icon"><i class="fas fa-envelope"></i></div>
+        <h3 class="opt-title">Send an Email</h3>
+        <p class="opt-sub">Prefer email? Send us your detailed requirements including product, quantity, destination country and preferred trade terms.</p>
+        <div class="opt-contact"><i class="fas fa-envelope" style="margin-right:6px;"></i>infinityexport123@gmail.com</div>
+        <a href="mailto:infinityexport123@gmail.com?subject=Export%20Inquiry%20-%20Infinity%20Export&body=Hello%20Infinity%20Export%20Team%2C%0A%0AI%20am%20interested%20in%20your%20products.%0A%0AProduct%3A%20%0AQuantity%3A%20%0ADestination%20Country%3A%20%0ATrade%20Terms%3A%20%0A%0APlease%20send%20a%20quotation.%0A%0AThank%20you." class="btn-mail">
+          <i class="fas fa-envelope"></i> Send Email Now
+        </a>
+      </div>
+    </div>
+
+    <!-- Details bar -->
+    <div class="contact-details reveal">
+      <div class="cd-item">
+        <i class="fas fa-map-marker-alt cd-ico"></i>
+        <div>
+          <div class="cd-label">Address</div>
+          <div class="cd-val">A-17 Nilkanth Society, Katargam, Surat, Gujarat 395004, India</div>
+        </div>
+      </div>
+      <div style="width:1px;height:48px;background:var(--border);flex-shrink:0;"></div>
+      <div class="cd-item">
+        <i class="fas fa-clock cd-ico"></i>
+        <div>
+          <div class="cd-label">Business Hours (IST)</div>
+          <div class="cd-val">Mon–Sat: 9:00 AM – 6:30 PM</div>
+        </div>
+      </div>
+      <div style="width:1px;height:48px;background:var(--border);flex-shrink:0;"></div>
+      <div class="cd-item">
+        <i class="fas fa-bolt cd-ico"></i>
+        <div>
+          <div class="cd-label">Response Time</div>
+          <div class="cd-val">Within <a href="https://wa.me/918469797592" target="_blank">24 hours</a> on all inquiries</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <i class="fas fa-globe-asia"></i> Infinity Export
+      </div>
+      <p class="footer-copy">&copy; 2024 Infinity Export · Surat, Gujarat, India · All Rights Reserved</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp float -->
+<a href="https://wa.me/918469797592?text=Hello%20Infinity%20Export%2C%20I%27m%20interested%20in%20your%20products." target="_blank" class="wa-float" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+/* ── NAV scroll effect ── */
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+/* ── Mobile menu ── */
+function toggleMobile() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+function closeMobile() {
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+
+/* ── Scroll reveal ── */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+/* ── Smooth scroll for nav links ── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if(target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior:'smooth', block:'start' });
+    }
+  });
+});
+
+/* ── Brochure click handler ── */
+function brochureClick(e) {
+  const link = e.currentTarget;
+  if(link.getAttribute('href') === '#') {
+    e.preventDefault();
+    const note = link.nextElementSibling;
+    note.innerHTML = '<i class="fas fa-exclamation-circle" style="color:var(--gold);margin-right:4px;"></i>Brochure PDF not linked yet. Contact us directly for the catalogue.';
+    note.style.color = 'var(--gold2)';
+  }
+}
+</script>
+</body>
+</html>
